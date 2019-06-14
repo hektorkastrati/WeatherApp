@@ -45,25 +45,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MotiDelegate 
         
     }
     
-    
-   
-
-   // @IBAction func btnKerko(_ sender: Any) {
-        
-   //     if(lblTeksti.text != ""){
-            
-     //       let params:[String:String] = ["q":lblTeksti.text!, "appid":API_KEY]
-            
-       //     merrKohen(params: params)
-            
-       // }else{
-            
-          // lblQyteti.text = "Sheno Qytetin"
-         //  lblTemperatura.text = ""
-        //}
-   // }
-    
-    
     @IBAction func switchChanged(_ sender: Any) {
         
         if(motiIZgjedhur != nil ){
@@ -147,13 +128,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MotiDelegate 
     }
     
     func updateMotin(moti:Moti) {
-        
-        //imgIkona.image = UIImage.init(named: moti.ikonaURL())
-        //lblQyteti.text = moti.qyteti + ", " + moti.shteti
-        //lblTemperatura.text = String(moti.temperatura)
-        //pershkrimiUshqimi.text = ushqimi.pershkrimi
+   
         motiIZgjedhur = moti
-        //print("Test")
+
         rifreskoPamjen()
     }
     
