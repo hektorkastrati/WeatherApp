@@ -29,7 +29,6 @@ class Controller2view: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //print("hello screen2")
         
             tableView.register(UINib.init(nibName:"MotiCellViewController", bundle: nil), forCellReuseIdentifier: "motiCell")
         
